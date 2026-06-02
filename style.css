@@ -1,12 +1,16 @@
 :root {
-  --green: #2d7a4f;
-  --green-light: #3aa063;
-  --green-dark: #1e5c39;
-  --bg: #f8faf9;
+  --navy: #0d1b2a;
+  --navy-mid: #152333;
+  --teal: #2a6b7c;
+  --teal-light: #3a8a9e;
+  --coral: #e8614a;
+  --coral-light: #f07a66;
+  --offwhite: #f0ede8;
+  --bg: #f5f4f2;
   --surface: #ffffff;
   --text: #1a1a1a;
   --text-muted: #5a6472;
-  --border: #e2e8e4;
+  --border: #e4e1dc;
   --radius: 12px;
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 }
@@ -47,7 +51,7 @@ nav {
 .nav-logo {
   font-weight: 700;
   font-size: 1.1rem;
-  color: var(--green);
+  color: var(--navy);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -73,20 +77,19 @@ nav {
 }
 
 .nav-links a:hover {
-  color: var(--green);
+  color: var(--coral);
 }
 
 /* ── HERO ── */
 .hero {
-  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 60%, var(--green-light) 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, var(--teal) 100%);
   color: #fff;
   padding: 80px 24px;
   text-align: center;
 }
 
 .hero-icon {
-  font-size: 4rem;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   display: block;
 }
 
@@ -163,7 +166,7 @@ nav {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 6px;
-  color: var(--green-dark);
+  color: var(--navy);
 }
 
 .feature-card p {
@@ -185,7 +188,7 @@ nav {
 .legal-page .page-header h1 {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--green-dark);
+  color: var(--navy);
   margin-bottom: 6px;
 }
 
@@ -206,7 +209,7 @@ nav {
 .legal-section h2 {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--green-dark);
+  color: var(--teal);
   margin-bottom: 12px;
 }
 
@@ -223,7 +226,7 @@ nav {
 }
 
 .legal-section a {
-  color: var(--green);
+  color: var(--coral);
   text-decoration: none;
 }
 
@@ -245,7 +248,7 @@ nav {
 .support-page .page-header h1 {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--green-dark);
+  color: var(--navy);
   margin-bottom: 6px;
 }
 
@@ -255,7 +258,7 @@ nav {
 }
 
 .contact-card {
-  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  background: linear-gradient(135deg, var(--navy), var(--teal));
   color: #fff;
   border-radius: var(--radius);
   padding: 32px;
@@ -306,7 +309,7 @@ nav {
 .faq-item h3 {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--green-dark);
+  color: var(--navy);
   margin-bottom: 8px;
 }
 
@@ -327,7 +330,7 @@ nav {
 .report-info h2 {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--green-dark);
+  color: var(--navy);
   margin-bottom: 12px;
 }
 
@@ -371,7 +374,7 @@ footer {
 }
 
 .footer-links a:hover {
-  color: var(--green);
+  color: var(--coral);
 }
 
 .footer-copy {
