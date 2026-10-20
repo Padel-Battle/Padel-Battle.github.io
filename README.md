@@ -12,6 +12,9 @@ mobile app source code or user tournament data.
 ## Files
 
 - `index.html`: landing page and store links.
+- `download.html`: unlisted app download page with automatic store selection.
+- `download-redirect.js`: routes incoming `/#download` links to the download page.
+- `download.test.cjs`: device detection, localisation, and fallback checks.
 - `support.html`: contact information and frequently asked questions.
 - `privacy-policy.html`: app data handling and Firebase disclosures.
 - `terms.html`: Terms of Use.
@@ -41,7 +44,26 @@ The design retains the existing navy, teal, coral, system font, and light surfac
 and introduces the app's court green for screenshot sections. Support and legal
 pages continue to use the existing shared stylesheet.
 
-The website has no JavaScript, forms, package dependencies, or build step.
+The website has no forms, package dependencies, backend, or build step. Small
+first-party JavaScript selects the app store for shared download links. Both
+store links remain usable without JavaScript.
+
+## Shared app download link
+
+The app shares https://padel-battle.github.io/#download. Incoming visits to this
+anchor open `download.html`; ordinary in-page download buttons keep scrolling to
+the existing section. Android opens Google Play; iPhone and iPad open the App
+Store. Desktop, unidentified devices, and recognised preview crawlers retain both
+store buttons. The page supports English, Ukrainian, Polish, Spanish, German,
+Portuguese, and Arabic, with RTL layout for Arabic.
+
+Open `/download.html?choose` to skip the automatic redirect. The page is absent
+from the site navigation and has `noindex, follow`; it is public, not private.
+No cookies, analytics, third-party service, or tournament data are involved.
+
+Run `node --test download.test.cjs` to check the routing and localisation. After
+deployment, smoke-test the shared link on a real Android phone and iPhone and
+check the manual fallback page.
 
 ## Preview and update
 
